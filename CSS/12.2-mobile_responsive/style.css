@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+p {
+  border: 1px solid #fff;
+  color: #ffff;
+  background-color: grey;
+  width: 20%;
+  float: left;
+  padding: 5px;
+  margin: 5px;
+}
+
+@media (max-width: 500px) {
+  p {
+    width: 100%;
+  }
+}
