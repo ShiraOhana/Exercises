@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+header,
+footer,
+.main,
+.side {
+  margin: 5px;
+  border: 1px solid black;
+  padding: 40px;
+  background-color: orange;
+}
+footer {
+  background-color: dodgerblue;
+  display: inline-block;
+  width: 100%;
+}
+.main {
+  background-color: green;
+  padding: 100px;
+  width: calc(90% - 80px);
+  float: right;
+}
+.side {
+  background-color: purple;
+  padding: 100px;
+  width: 80px;
+  float: left;
+}
+
+@media (max-width: 500px) {
+  .side {
+    display: none;
+  }
+  .main {
+    width: 100%;
+  }
+}
