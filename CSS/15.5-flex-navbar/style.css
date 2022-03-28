@@ -1,0 +1,28 @@
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  border: 1px solid black;
+  padding: 20px;
+}
+.logo {
+  width: 50%;
+  font-weight: bold;
+}
+
+@media (max-width: 500px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  nav ul li {
+    padding-bottom: 15px;
+  }
+  .logo {
+    font-size: 1.5rem;
+    width: 100%;
+    padding-bottom: 15px;
+  }
+}
