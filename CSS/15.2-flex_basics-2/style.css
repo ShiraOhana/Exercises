@@ -1,6 +1,10 @@
 .container {
+  background-color: rgb(230, 230, 170);
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
 }
 
 .box1 {
