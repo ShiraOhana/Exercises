@@ -1,0 +1,15 @@
+h2 {
+  font-size: 20px;
+}
+
+@media (min-width: 500px) {
+  h2 {
+    font-size: 4vw;
+  }
+}
+
+@media (min-width: 1500px) {
+  h2 {
+    font-size: 8vw;
+  }
+}
