@@ -1,0 +1,28 @@
+body {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  color: purple;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 150px;
+  background-color: yellowgreen;
+  color: #fff;
+  border-radius: 4px;
+  padding: 5px 0;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  bottom: 20px;
+  right: -15px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
