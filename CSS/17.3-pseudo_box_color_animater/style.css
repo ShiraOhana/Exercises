@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  background: purple;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  margin: auto;
+  top: 20vh;
+}
+
+.box:after {
+  content: "";
+  background-color: darkred;
+  position: absolute;
+  width: 100px;
+  height: 200px;
+  left: 100px;
+}
+.box:hover {
+  background-color: rgb(145, 61, 61);
+}
