@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+}
+
+.box {
+  background: black;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  margin: auto;
+  top: 20vh;
+  border: 5px solid darkred;
+  color: #fff;
+  z-index: 1;
+  text-align: center;
+}
+.box h3 {
+  position: relative;
+  top: 80px;
+}
+
+.box:after {
+  content: "";
+  background-color: black;
+  position: absolute;
+  width: 300px;
+  height: 100px;
+  left: -50px;
+  bottom: 40px;
+  z-index: -1;
+}
+.box:before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  width: 100px;
+  height: 300px;
+  left: 40px;
+  bottom: -20px;
+  z-index: -1;
+}
