@@ -1,0 +1,5 @@
+.website:after {
+  content: "https://www.appleseeds.org.il";
+  color: purple;
+  padding-left: 2px;
+}
