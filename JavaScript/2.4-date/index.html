@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function currentDate() {
+        date = new Date();
+        // Date
+        todaysDate = date.getDate();
+        // Year
+        year = date.getFullYear();
+        // Day
+        days = [
+          "sunday",
+          "monday",
+          "tuesday",
+          "wednesday",
+          "thursday",
+          "friday",
+          "saturday",
+        ];
+        numberOfTheDay = date.getDay();
+        today = days[numberOfTheDay];
+
+        // Month
+
+        monthes = [
+          "January",
+          "February",
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October",
+          "November",
+          "December",
+        ];
+
+        numberOfTheMonth = date.getMonth();
+        thisMonth = monthes[numberOfTheMonth];
+
+        console.log(
+          `Today is ${today} the ${todaysDate} of ${thisMonth} ${year}`
+        );
+      }
+      currentDate();
+      //  Format `Today is Sunday the 31 of January, 2021’
+    </script>
+  </body>
+</html>
