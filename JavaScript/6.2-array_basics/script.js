@@ -17,8 +17,9 @@ console.log(people);
 people.push("Shira");
 console.log(people);
 // // 6
-for (let i = 0; i < 2; i++) {
+for (let i = 0; i < people.length; i++) {
   console.log(people[i]);
+  if (people[i] === "Mary") break;
 }
 // // 7
 console.log(people.slice(2));
